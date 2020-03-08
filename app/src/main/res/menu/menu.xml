@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_search"
+        android:title="Search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="always|collapseActionView"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:collapseIcon="@drawable/ic_arrow_back_black_24dp"/>
+    <item
+        android:id="@+id/category1"
+        android:title="전체 보기"/>
+    <item
+        android:id="@+id/category2"
+        android:title="장애인용 공용 화장실"/>
+    <item
+        android:id="@+id/category3"
+        android:title="숙박업소"/>
+    <item
+        android:id="@+id/category4"
+        android:title="보건소"/>
+    <item
+        android:id="@+id/category5"
+        android:title="음식점"/>
+    <item
+        android:id="@+id/category6"
+        android:title="주차장"/>
+    <item
+        android:id="@+id/category7"
+        android:title="문화센터"/>
+    <item
+        android:id="@+id/category8"
+        android:title="교육센터"/>
+    <item
+        android:id="@+id/category9"
+        android:title="병원"/>
+</menu>

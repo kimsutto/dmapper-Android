@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.ssomai.android.scalablelayout.ScalableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:scale_base_width="400"
+    app:scale_base_height="90"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingPrefix">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:scale_left="10"
+        app:scale_top="20"
+        app:scale_width="400"
+        app:scale_height="50"
+        app:scale_textsize="20"
+        android:textStyle="bold"
+        android:text="place name"
+        android:id="@+id/place_name" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:scale_left="10"
+        app:scale_top="45"
+        app:scale_width="400"
+        app:scale_height="50"
+        app:scale_textsize="18"
+        android:text="address name"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/address_name"/>
+
+</com.ssomai.android.scalablelayout.ScalableLayout>

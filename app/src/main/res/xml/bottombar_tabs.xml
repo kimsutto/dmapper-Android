@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android = "http://schemas.android.com/apk/res/android">
+    <tabs>
+        <tab
+            id="@+id/tab_registermap"
+            icon="@drawable/ic_map_black_24dp"
+            title = "등록"
+            barColorWhenSelected="#829FD9"/>
+        <tab
+            id="@+id/tab_LookupData"
+            icon="@drawable/ic_menu_white_24dp"
+            title = "조회"
+            barColorWhenSelected="#829FD9"/>
+        <tab
+            id="@+id/tab_Setting"
+            icon="@drawable/ic_settings_white_24dp"
+            title="설정"
+            barColorWhenSelected="#829FD9" />
+    </tabs>
+</PreferenceScreen>

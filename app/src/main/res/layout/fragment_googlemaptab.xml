@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BottomBarFragment.googlemaptab">
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/google_map_view"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/search_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/searchImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_search_black_24dp"
+                android:layout_alignLeft="@+id/searchbutton"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                />
+            <Button
+                android:id="@+id/autocomplete_button"
+                android:background="#00FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="72dp"
+                android:paddingTop="5dp"
+                android:text="장소를 입력하세요"
+                android:textColor="#8F8F8F"
+                android:textSize="20dp"/>
+        </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/Linearlayout"
+        android:layout_below="@+id/search_layout"
+        android:layout_alignParentRight="true"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:showDividers="middle"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/kakaobutton"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="카카오 지도로 보기"
+            android:textSize="13dp"
+            android:textColor="#FACF4E"
+            android:background="@drawable/buttonshape2"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_below="@+id/Linearlayout"
+        android:layout_alignParentRight="true"
+        android:id="@+id/mylocationbutton"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_gps_fixed_black_24dp"
+        />
+    </RelativeLayout>
+</FrameLayout>

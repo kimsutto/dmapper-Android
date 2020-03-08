@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlaceRequest.GoogleAddressReSelect">
+
+    <fragment
+        android:id="@+id/google_map_view"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <RelativeLayout
+        android:id="@+id/RelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/search_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/searchImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_search_black_24dp"
+                android:layout_alignLeft="@+id/searchbutton"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                />
+            <Button
+                android:id="@+id/autocomplete_button1"
+                android:background="#00FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="72dp"
+                android:paddingTop="5dp"
+                android:text="장소를 입력하세요"
+                android:textColor="#8F8F8F"
+                android:textSize="20dp"/>
+        </RelativeLayout>
+        <ImageView
+            android:layout_below="@+id/search_layout"
+            android:layout_alignParentRight="true"
+            android:id="@+id/mylocationbutton"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_gps_fixed_black_24dp"
+            />
+        <Button
+            android:layout_alignParentBottom="true"
+            android:id="@+id/address_reload"
+            android:text="주소 재설정"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#829FD9"/>
+    </RelativeLayout>
+</FrameLayout>

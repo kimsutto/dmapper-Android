@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserEmailReceiveActivity"
+    tools:ignore="MissingConstraints">
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="152dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이메일 수집에 동의하지 않으셨습니다"
+            android:textColor="#829FD9"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="귀하의 이메일은 이벤트 경품 증정에 사용됩니다" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="20dp"
+            android:id="@+id/textinputlayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="300dp"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/user_email_receive_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="이메일 입력"
+                android:inputType="text"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="완료"
+            android:textSize="23dp"
+            android:textColor="#ffffff"
+            android:background="#829FD9"/>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
